@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetCrumbs Bakery</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=
+    Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+            html {
+                scroll-behavior: smooth;
+            }
+        </style>
+  </head>
+
+  <body class="font-[Poppins] bg-white">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- Logo -->
+                <div>
+                    <h1 class="text-3xl font-bold text-amber-700">
+                        SweetCrumbs
+                    </h1>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-8">
+
+                    <a href="index.html" class="text-gray-700 hover:text-amber-700 transition">
+                        Home
+                    </a>
+                    <a href="about.html" class="text-gray-700 hover:text-amber-700 transition">
+                        About
+                    </a>
+                    <a href="Contact.html" class="text-gray-700 hover:text-amber-700 transition">
+                        Contact
+                    </a>
+
+                    <button class="bg-amber-700 text-white px-5 py-2 rounded-full hover:bg-amber-800 transition">
+                        Order Now
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden">
+
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-7 h-7 text-gray-800"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+
+                        <path stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-6">
+                <div class="flex flex-col gap-4">
+                    <a href="index.html" class="text-gray-700">
+                        home
+                    </a>
+                    <a href="about.html" class="text-gray-700">
+                        about
+                    </a>
+                    <a href="Contact.html" class="text-gray-700">
+                        Contact
+                    </a>
+                    <button class="bg-amber-700 text-white py-3 rounded-full">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<!-- Contact Page -->
+
+<section class="bg-amber-50 py-16">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Heading -->
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-bold text-amber-800">
+        Contact Us
+      </h1>
+
+      <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+        We would love to hear from you. Contact SweetCrumbs Bakery for
+        orders, questions, custom cakes, and more.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+      <!-- Contact Information -->
+      <div class="bg-white rounded-3xl shadow-lg p-8">
+
+        <h2 class="text-2xl font-bold text-amber-800 mb-5">
+          Get In Touch
+        </h2>
+
+        <p class="text-gray-600 leading-relaxed mb-6">
+          Our team is always ready to assist you with your bakery needs.
+          Whether it is a special celebration or a simple treat, we are
+          here to serve you.
+        </p>
+
+        <div class="space-y-5">
+          <div>
+            <h3 class="font-semibold text-lg">
+              📍 Visit Us
+            </h3>
+            <p class="text-gray-600">
+              32 Awka-road, Anambra, Nigeria
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-lg">
+              📞 Phone
+            </h3>
+            <p class="text-gray-600">
+              +234 808 561 4494
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-lg">
+              ✉️ Gmail
+            </h3>
+            <p class="text-gray-600">
+              sweetcrumbs@gmail.com
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-lg">
+              🕒 Opening Hours
+            </h3>
+
+            <p class="text-gray-600">
+              Monday - Friday: 7AM - 8PM <br>
+              Saturday: 8AM - 9PM <br>
+              Sunday: 9AM - 5PM
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="bg-white rounded-3xl shadow-lg p-8">
+
+        <h2 class="text-2xl font-bold text-amber-800 mb-5">
+          Send Us A Message
+        </h2>
+
+        <form class="space-y-5">
+
+          <input 
+          type="text"
+          placeholder="Your Name"
+          class="w-full border rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-amber-600">
+
+          <input 
+          type="email"
+          placeholder="Your Email"
+          class="w-full border rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-amber-600">
+
+          <textarea 
+          rows="5"
+          placeholder="Your Message"
+          class="w-full border rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-amber-600"></textarea>
+
+          <button 
+          class="bg-amber-700 text-white px-8 py-3 rounded-xl hover:bg-amber-800 transition">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Custom Orders -->
+    <div class="mt-12 bg-amber-800 text-white rounded-3xl p-10 text-center">
+      <h2 class="text-3xl font-bold mb-4">
+        Custom Orders
+      </h2>
+      <p class="max-w-3xl mx-auto text-amber-100 leading-relaxed">
+        Planning a birthday, wedding, or special event?
+        We create beautiful custom cakes, pastries, and dessert packages
+        made specially for your celebration.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-amber-900 text-white py-12">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      <!-- Brand -->
+      <div>
+
+        <h2 class="text-3xl font-bold">
+          SweetCrumbs
+        </h2>
+
+        <p class="mt-4 text-amber-100 leading-relaxed">
+          Fresh cakes, bread, and pastries baked daily
+          with quality ingredients and passion.
+          We create sweet moments for every occasion.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4">
+          Quick Links
+        </h3>
+
+        <ul class="space-y-3 text-amber-100">
+          <li>
+            <a href="index.html" class="hover:text-white">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="about.html" class="hover:text-white">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="Contact.html" class="hover:text-white">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div>
+
+        <h3 class="text-xl font-semibold mb-4">
+          Follow Us
+        </h3>
+
+        <p class="text-amber-100 mb-5 leading-relaxed">
+
+          Stay connected with SweetCrumbs Bakery.
+          Follow us for new products, special offers,
+          and bakery updates.
+        </p>
+
+        <div class="flex gap-4">
+
+          <!-- Facebook -->
+          <a href="#"
+          class="bg-white text-amber-900 w-11 h-11 rounded-full flex items-center justify-center hover:scale-110 transition">
+
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+
+              <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-3h2.4V9.7c0-2.4 1.4-3.8 3.6-3.8 1 0 2 .2 2 .2v2.8h-1.1c-1.1 0-1.5.7-1.5 1.4V12H16l-.5 3h-2.1v7A10 10 0 0 0 22 12z"/>
+            </svg>
+          </a>
+          
+          <!-- Instagram -->
+          <a href="#"
+          class="bg-white text-amber-900 w-11 h-11 rounded-full flex items-center justify-center hover:scale-110 transition">
+
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5z"/>
+            </svg>
+          </a>
+
+          <!-- X Twitter -->
+          <a href="#"
+          class="bg-white text-amber-900 w-11 h-11 rounded-full flex items-center justify-center hover:scale-110 transition">
+
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.9-6.4L6.3 22H3.2l7.3-8.4L1 2h6.3l4.4 5.8L18.9 2z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="border-t border-amber-700 mt-10 pt-6 text-center text-amber-200">
+      <p>
+        © 2026 SweetCrumbs Bakery. All Rights Reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script>
+
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+
+</script>
+
+</body>
+</html>
